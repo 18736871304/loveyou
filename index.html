@@ -18,7 +18,7 @@
 	<link rel='stylesheet' id='bootstrap.min-css' href='css/bootstrap.min.css' type='text/css' media='all' />
 	<!-- <link rel='stylesheet' id='font-awesome.min-css' href='css/font-awesome.min.css' type='text/css' media='all' /> -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type='text/css' media='all'> -->
-		<link rel="stylesheet" href="css/font-awesome.css" type='text/css' media='all' />
+	<link rel="stylesheet" href="css/font-awesome.css" type='text/css' media='all' />
 	<link rel='stylesheet' id='font-ilove-css' href='css/font-ilove.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='sample-style-css' href='css/sample-style.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='jquery.fancybox-css' href='css/jquery.fancybox.css' type='text/css' media='all' />
@@ -130,7 +130,7 @@
 			margin-top: 20px;
 		}
 
-		#dslc-content #dslc-module-11 .dslc-image-caption 	{
+		#dslc-content #dslc-module-11 .dslc-image-caption {
 			margin-bottom: 0px;
 			padding-top: 0px;
 			padding-bottom: 0px;
@@ -316,9 +316,15 @@
 		.heading h2 {
 			font-size: 38px;
 		}
+
 		.fa-heart:before {
-    content:"\f004"
-}
+			content: "\f004"
+		}
+
+		.carousel-inner .item img {
+			width: 700px;
+			height: 650px;
+		}
 	</style>
 
 </head>
@@ -336,7 +342,7 @@
 			<div class="rect5"></div>
 		</div>
 	</div>
-	<script >
+	<script>
 		/* <![CDATA[ */
 		jQuery(document).ready(function ($) {
 			/*------------------------------ Preloader ----------------------*/
@@ -356,11 +362,10 @@
 			<h1 class="slideInDown wow animated" data-wow-delay="0.5s">魏钦录<span class="heart pulsing fa fa-heart">
 					</i></span>郭伟莹
 			</h1>
-			<script >
+			<script>
 				/* <![CDATA[ */
 				setInterval(function () {
 					var timespan = countdown(new Date("09/16/2020"), new Date());
-					console.log(timespan)
 					var div = document.getElementById('time');
 					div.innerHTML = "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" +
 						timespan
@@ -396,7 +401,7 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-					<script >
+					<script>
 						/* <![CDATA[ */
 						jQuery(document).ready(function ($) {
 							$('.nav').onePageNav({
@@ -665,9 +670,6 @@
 							<p class="wow fadeInUp" data-wow-delay="0.7s">所有美好的记忆，我都会保存下来，等我们老了，再一起回忆。</p>
 						</div>
 
-
-
-
 					</div><!-- .dslc-module -->
 
 					<div id="dslc-module-13"
@@ -677,7 +679,7 @@
 						data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
-						<script >
+						<script>
 							/* <![CDATA[ */
 							jQuery(document).ready(function ($) {
 								$('#startcounting .counting').appear(function () {
@@ -757,7 +759,7 @@
 
 
 
-						<script >
+						<script>
 							/* <![CDATA[ */
 							jQuery(document).ready(function ($) {
 								$("#owl-moments13").owlCarousel({
@@ -814,16 +816,63 @@
 
 								<div class="heading">
 									<h2 class="wow fadeInUp underline padtop50" data-wow-delay="0.5s">祝福留言</h2>
-									<p class="wow fadeInUp" data-wow-delay="0.7s">来吧，带上你们的祝福。我会仔细阅读你们的留言</p>
-								</div>
+									<!-- <p class="wow fadeInUp" data-wow-delay="0.7s">来吧，带上你们的祝福。我会仔细阅读你们的留言</p> -->
+									<div id="carousel-example-generic" class="carousel slide center-block"
+										data-ride="carousel" style="height: 650px;width: 450px;">
 
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="images/guo1.jpg" alt="...">
+												<div class="carousel-caption">
+													图1
+												</div>
+											</div>
+											<div class="item">
+												<img src="images/guo2.jpg" alt="...">
+												<div class="carousel-caption">
+													图2
+												</div>
+											</div>
+											<div class="item">
+												<img src="images/guo3.jpg" alt="...">
+												<div class="carousel-caption">
+													图3
+												</div>
+											</div>
+											<div class="item">
+												<img src="images/guo4.jpg" alt="...">
+												<div class="carousel-caption">
+													图4
+												</div>
+											</div>
+											<div class="item">
+												<img src="images/guo5.jpg" alt="...">
+												<div class="carousel-caption">
+													图5
+												</div>
+											</div>
+										</div>
+
+										<ul class="carousel-indicators">
+											<li data-target="#carousel-example-generic" data-slide-to="0"
+												class="active">
+											</li>
+											<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+											<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+										</ul>
+									</div>
+
+
+								</div>
 
 
 
 							</div>
 						</div>
 						<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
-							<script >
+							<script>
 								var duoshuoQuery = {
 									short_name: "51bbw"
 								};
@@ -872,7 +921,7 @@
 	<!-- End / Footer -->
 	<!-- BEGIN GO TO TOP --><a href="#." class="back-to-top" id="back-to-top"><i class="fa fa-heart"></i></a>
 	<!-- END GO TO TOP -->
-	<script >
+	<script>
 		jQuery(document).ready(function ($) {
 			/*------------------------------ WOW Script ----------------------*/
 			new WOW().init();
@@ -935,6 +984,7 @@
 	<script type='text/javascript' src='js/slide-fade-content.js'></script>
 	<script type='text/javascript' src='js/countup.js'></script>
 	<script type='text/javascript' src='js/modernizr.hover.js'></script>
+
 	<script type='text/javascript'>
 		/* <![CDATA[ */
 		var PlutonAnimation = {
@@ -956,7 +1006,11 @@
 	<script type='text/javascript' src='js/comment-reply.min.js'></script>
 	<script type='text/javascript' src='js/wp-embed.min.js'></script>
 	<script type='text/javascript' src='js/jquery.nav.js'></script>
-
+	<!-- <script>
+		$('.carousel').carousel({
+			interval: 2000
+		})
+	</script> -->
 </body>
 
 </html>
