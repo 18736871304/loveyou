@@ -16,9 +16,9 @@
 	<link rel='stylesheet' id='font-lato-css' href='css/a86f112c7643460b98ed1c2564930cb3.css' type='text/css'
 		media='screen' />
 	<link rel='stylesheet' id='bootstrap.min-css' href='css/bootstrap.min.css' type='text/css' media='all' />
-	<link rel='stylesheet' id='font-awesome.min-css' href='css/font-awesome.min.css' type='text/css' media='all' />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-		type='text/css' media='all'>
+	<!-- <link rel='stylesheet' id='font-awesome.min-css' href='css/font-awesome.min.css' type='text/css' media='all' /> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type='text/css' media='all'> -->
+		<link rel="stylesheet" href="css/font-awesome.css" type='text/css' media='all' />
 	<link rel='stylesheet' id='font-ilove-css' href='css/font-ilove.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='sample-style-css' href='css/sample-style.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='jquery.fancybox-css' href='css/jquery.fancybox.css' type='text/css' media='all' />
@@ -130,7 +130,7 @@
 			margin-top: 20px;
 		}
 
-			{
+		#dslc-content #dslc-module-11 .dslc-image-caption 	{
 			margin-bottom: 0px;
 			padding-top: 0px;
 			padding-bottom: 0px;
@@ -316,6 +316,9 @@
 		.heading h2 {
 			font-size: 38px;
 		}
+		.fa-heart:before {
+    content:"\f004"
+}
 	</style>
 
 </head>
@@ -333,7 +336,7 @@
 			<div class="rect5"></div>
 		</div>
 	</div>
-	<script type="text/javascript">
+	<script >
 		/* <![CDATA[ */
 		jQuery(document).ready(function ($) {
 			/*------------------------------ Preloader ----------------------*/
@@ -350,16 +353,19 @@
 	<!--Carousel-->
 	<div id="myCarousel" class="carousel slide carousel-fade">
 		<div class="messages">
-			<h1 class="slideInDown wow animated" data-wow-delay="0.5s">魏钦录<span class="heart pulsing fa fa-heart"> </i></span>郭伟莹
+			<h1 class="slideInDown wow animated" data-wow-delay="0.5s">魏钦录<span class="heart pulsing fa fa-heart">
+					</i></span>郭伟莹
 			</h1>
-			<script type="text/javascript">
+			<script >
 				/* <![CDATA[ */
 				setInterval(function () {
 					var timespan = countdown(new Date("09/16/2020"), new Date());
 					console.log(timespan)
 					var div = document.getElementById('time');
-					div.innerHTML = "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" + timespan
-						.months + "</div>" + "<div><span>Days</span>" + timespan.days + "</div>" + "<div><span>Hours</span>" +
+					div.innerHTML = "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" +
+						timespan
+						.months + "</div>" + "<div><span>Days</span>" + timespan.days + "</div>" +
+						"<div><span>Hours</span>" +
 						timespan.hours + "</div>" + "<div><span>Minutes</span>" + timespan.minutes + "</div>" +
 						"<div><span>Seconds</span>" + timespan.seconds + "</div>"
 				}, 1000);
@@ -382,14 +388,15 @@
 		<nav class="navbar navbar-default navbar-custom" role="navigation">
 			<div class="container">
 				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-main-collapse">
 						<i class="fa fa-bars"></i>
 					</button>
 					<a class="navbar-brand" href=""><img src="images/logo.png" alt="ilove Wordpress Theme"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-					<script type="text/javascript">
+					<script >
 						/* <![CDATA[ */
 						jQuery(document).ready(function ($) {
 							$('.nav').onePageNav({
@@ -433,15 +440,16 @@
 							<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
 								<div id="dslc-module-1"
 									class="dslc-module-front dslc-module-Pluton_Title dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-									data-module-id="1" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12" data-dslc-anim="none"
-									data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease"
-									data-dslc-preset="">
+									data-module-id="1" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12"
+									data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+									data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
 
 									<div class="heading" id="#wmaq" title="wmaq">
 										<h2 class="wow fadeInUp underline padtop50" data-wow-delay="0.5s">我们的爱情</h2>
-										<p class="wow fadeInUp" data-wow-delay="0.7s">我们才刚开始，这东西是为你准备的,话是我偷的,但是我喜欢你是真的</p>
+										<p class="wow fadeInUp" data-wow-delay="0.7s">我们才刚开始，这东西是为你准备的,话是我偷的,但是我喜欢你是真的
+										</p>
 									</div>
 
 
@@ -451,9 +459,9 @@
 
 								<div id="dslc-module-2"
 									class="dslc-module-front dslc-module-Pluton_Couple_Block dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-									data-module-id="2" data-dslc-module-id="Pluton_Couple_Block" data-dslc-module-size="12"
-									data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
-									data-dslc-anim-easing="default" data-dslc-preset="">
+									data-module-id="2" data-dslc-module-id="Pluton_Couple_Block"
+									data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="0"
+									data-dslc-anim-duration="650" data-dslc-anim-easing="default" data-dslc-preset="">
 
 
 
@@ -493,9 +501,9 @@
 							<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
 								<div id="dslc-module-3"
 									class="dslc-module-front dslc-module-Pluton_Title dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-									data-module-id="3" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12" data-dslc-anim="none"
-									data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease"
-									data-dslc-preset="">
+									data-module-id="3" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12"
+									data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+									data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
 
@@ -521,12 +529,14 @@
 										<div class="col-md-12">
 											<ul class="timeline">
 												<li class="">
-													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-heart"></i>
+													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i
+															class="fa fa-heart"></i>
 													</div>
 													<div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s">
 														<div class="timeline-heading">
 															<h4 class="timeline-title">我们的初次相识</h4>
-															<p><small class="text-muted"><i class="fa fa-heart"></i> 09/16/2020 -魏钦录</small></p>
+															<p><small class="text-muted"><i class="fa fa-heart"></i>
+																	09/16/2020 -魏钦录</small></p>
 														</div>
 														<div class="timeline-body">
 															<div id="dslc-theme-content">
@@ -538,31 +548,36 @@
 													</div>
 												</li>
 												<li class="timeline-inverted negative100">
-													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-heart"></i>
+													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i
+															class="fa fa-heart"></i>
 													</div>
 													<div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s">
 														<div class="timeline-heading">
 															<h4 class="timeline-title">我们第一次网上视频</h4>
-															<p><small class="text-muted"><i class="fa fa-heart"></i> 09/18/2020 -魏钦录</small></p>
+															<p><small class="text-muted"><i class="fa fa-heart"></i>
+																	09/18/2020 -魏钦录</small></p>
 														</div>
 														<div class="timeline-body">
 															<div id="dslc-theme-content">
 																<div id="dslc-theme-content-inner">
-																	<p> 第一次网上我们聊了近80分钟,那是我近两年时间视频最长的时间,心想:终于遇到了一个知心聊得来的人了,特别的激动。</p>
+																	<p> 第一次网上我们聊了近80分钟,那是我近两年时间视频最长的时间,心想:终于遇到了一个知心聊得来的人了,特别的激动。
+																	</p>
 																</div>
 															</div>
 														</div>
 													</div>
 												</li>
 
-							
+
 												<li class="negative75">
-													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-heart"></i>
+													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i
+															class="fa fa-heart"></i>
 													</div>
 													<div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s">
 														<div class="timeline-heading">
 															<h4 class="timeline-title">我们私定终身</h4>
-															<p><small class="text-muted"><i class="fa fa-heart"></i> 09/21/2020 -魏钦录</small></p>
+															<p><small class="text-muted"><i class="fa fa-heart"></i>
+																	09/21/2020 -魏钦录</small></p>
 														</div>
 														<div class="timeline-body">
 															<div id="dslc-theme-content">
@@ -583,12 +598,14 @@
 
 
 												<li class="timeline-inverted negative100">
-													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i class="fa fa-heart"></i>
+													<div class="timeline-badge wow fadeInUp" data-wow-delay="0.5s"><i
+															class="fa fa-heart"></i>
 													</div>
 													<div class="timeline-panel wow fadeInLeft" data-wow-delay="0.7s">
 														<div class="timeline-heading">
 															<h4 class="timeline-title">未来的我们</h4>
-															<p><small class="text-muted"><i class="fa fa-heart"></i> 09/27/2020 -魏钦录</small></p>
+															<p><small class="text-muted"><i class="fa fa-heart"></i>
+																	09/27/2020 -魏钦录</small></p>
 														</div>
 														<div class="timeline-body">
 															<div id="dslc-theme-content">
@@ -646,8 +663,9 @@
 				<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
 					<div id="dslc-module-12"
 						class="dslc-module-front dslc-module-Pluton_Title dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-						data-module-id="12" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12" data-dslc-anim="none"
-						data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease" data-dslc-preset="">
+						data-module-id="12" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12"
+						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+						data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
 
@@ -663,11 +681,12 @@
 
 					<div id="dslc-module-13"
 						class="dslc-module-front dslc-module-Pluton_Fun_Facts dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-						data-module-id="13" data-dslc-module-id="Pluton_Fun_Facts" data-dslc-module-size="12" data-dslc-anim="none"
-						data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease" data-dslc-preset="">
+						data-module-id="13" data-dslc-module-id="Pluton_Fun_Facts" data-dslc-module-size="12"
+						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+						data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
-						<script type="text/javascript">
+						<script >
 							/* <![CDATA[ */
 							jQuery(document).ready(function ($) {
 								$('#startcounting .counting').appear(function () {
@@ -689,8 +708,9 @@
 
 					<div id="dslc-module-33"
 						class="dslc-module-front dslc-module-Pluton_Spacer dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-						data-module-id="33" data-dslc-module-id="Pluton_Spacer" data-dslc-module-size="12" data-dslc-anim="none"
-						data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="default" data-dslc-preset="">
+						data-module-id="33" data-dslc-module-id="Pluton_Spacer" data-dslc-module-size="12"
+						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+						data-dslc-anim-easing="default" data-dslc-preset="">
 
 
 
@@ -710,15 +730,16 @@
 					<div id="dslc-module-14"
 						class="dslc-module-front dslc-module-Pluton_Video_Parallax dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
 						data-module-id="14" data-dslc-module-id="Pluton_Video_Parallax" data-dslc-module-size="12"
-						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="default"
-						data-dslc-preset="">
+						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+						data-dslc-anim-easing="default" data-dslc-preset="">
 
 
 
 						<div class="video-parallax">
 							<div class="overlay"></div>
 							<div class="col-md-12 playvid">
-								<a class="fa fa-play-circle popup-vimeo wow zoomInDown" data-wow-duration="1s" data-wow-delay="0.9s"
+								<a class="fa fa-play-circle popup-vimeo wow zoomInDown" data-wow-duration="1s"
+									data-wow-delay="0.9s"
 									href="https://18736871304.github.io/lovetree/lovetree.html"></a>
 							</div>
 						</div>
@@ -737,14 +758,15 @@
 				<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
 					<div id="dslc-module-15"
 						class="dslc-module-front dslc-module-Pluton_Title dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-						data-module-id="15" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12" data-dslc-anim="none"
-						data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease" data-dslc-preset="">
+						data-module-id="15" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12"
+						data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+						data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
 
 
 
-						<script type="text/javascript">
+						<script >
 							/* <![CDATA[ */
 							jQuery(document).ready(function ($) {
 								$("#owl-moments13").owlCarousel({
@@ -799,8 +821,9 @@
 						<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
 							<div id="dslc-module-17"
 								class="dslc-module-front dslc-module-Pluton_Title dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-								data-module-id="17" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12" data-dslc-anim="none"
-								data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="ease" data-dslc-preset="">
+								data-module-id="17" data-dslc-module-id="Pluton_Title" data-dslc-module-size="12"
+								data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+								data-dslc-anim-easing="ease" data-dslc-preset="">
 
 
 
@@ -815,7 +838,7 @@
 							</div>
 						</div>
 						<div class="dslc-modules-area dslc-col dslc-12-col dslc-last-col" data-size="12">
-							<script type="text/javascript">
+							<script >
 								var duoshuoQuery = {
 									short_name: "51bbw"
 								};
@@ -830,9 +853,9 @@
 							</script>
 							<div id="dslc-module-56"
 								class="dslc-module-front dslc-module-Pluton_Spacer dslc-in-viewport-check dslc-in-viewport-anim-none   dslc-module-handle-like-regular"
-								data-module-id="56" data-dslc-module-id="Pluton_Spacer" data-dslc-module-size="12" data-dslc-anim="none"
-								data-dslc-anim-delay="0" data-dslc-anim-duration="650" data-dslc-anim-easing="default"
-								data-dslc-preset="">
+								data-module-id="56" data-dslc-module-id="Pluton_Spacer" data-dslc-module-size="12"
+								data-dslc-anim="none" data-dslc-anim-delay="0" data-dslc-anim-duration="650"
+								data-dslc-anim-easing="default" data-dslc-preset="">
 
 
 
@@ -882,7 +905,8 @@
 					<div class="col-md-12">
 						<p>© wei &amp; 2020 - All Rights Reserved. </p>
 						<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
-								src="http://music.163.com/outchain/player?type=2&id=132975&auto=1&height=66"></iframe></p>
+								src="http://music.163.com/outchain/player?type=2&id=132975&auto=1&height=66"></iframe>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -892,7 +916,7 @@
 	<!-- End / Footer -->
 	<!-- BEGIN GO TO TOP --><a href="#." class="back-to-top" id="back-to-top"><i class="fa fa-heart"></i></a>
 	<!-- END GO TO TOP -->
-	<script type="text/javascript">
+	<script >
 		jQuery(document).ready(function ($) {
 			/*------------------------------ WOW Script ----------------------*/
 			new WOW().init();
